@@ -1,11 +1,11 @@
 $(document).ready(function() {
-  $("#formOne").sumbit(function() {
+  $("#formOne").submit(function(event) {
     event.preventDefault();
-    const yourInput = $("input#your-text").val();
-
-    $(".your-text").text(yourInput);
-
-
+    const yourInput = $("input#yourText").val().toUpperCase();
+    
+      $(".yourText").text(yourInput);
+    
+    $("#story").show();
 
   });
 });
